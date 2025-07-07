@@ -1,4 +1,4 @@
-const CACHE_NAME = 'estrategias-ayla-v1';
+const CACHE_NAME = 'estrategias-ayla-v4';
 const urlsToCache = [
   '/',
   '/index.html',
