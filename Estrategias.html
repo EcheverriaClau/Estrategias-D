@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doterra · Estructura Visual Pro</title>
+  <link rel="stylesheet" href="visual.css" />
+  <link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<meta name="theme-color" content="#6a1b9a" />
+</head>
+<body>
+  <h1>🌿 Comparador de Estrategias Doterra</h1>
+
+  <div class="grid-container">
+    <!-- Estrategia 1 -->
+    <div class="panel" id="estrategia1">
+      <h2>Estrategia 1</h2>
+      <label for="rango-estrategia1">Rango:</label>
+      <select id="rango-estrategia1">
+        <option value="ejecutive">Ejecutivo</option>
+        <option value="elite">Elite</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="platinum">Platinum</option>
+        <option value="diamond">Diamond</option>
+        <option value="blue">Blue Diamond</option>
+        <option value="presidential">Presidential Diamond</option>
+      </select>
+
+      <form class="form-inscripcion" data-panel="estrategia1">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="number" name="ov" placeholder="OV" required min="1" />
+        <button type="submit">Inscribir</button>  <button onclick="resetPanel('estrategia1')">Resetear</button>
+      </form>
+
+      <div id="inscritos-estrategia1"></div>
+      <div id="progreso-estrategia1"></div>
+      <div id="recomendacion-estrategia1"></div>
+      <div id="estructura-estrategia1" class="estructura"></div>
+      
+ <div class="info-estrategia">
+  <span class="tooltip-icon" onclick="toggleTooltip('tooltip-estrategia1')">🛈</span>
+  <div class="tooltip-box" id="tooltip-estrategia1">
+    <h3>🌿 Estrategia 1 <br>Estructura Justa y Eficiente</h3><br>
+    <p>
+      Esta estrategia propone una estructura mínima y equilibrada que cumple exactamente con los requisitos para cada rango, sin excedentes ni duplicaciones.
+    </p><br>
+    <ul class="sin-puntos">
+      <li>🔹 Avance claro y guiado por los mínimos requeridos. Se enfoca en equilibrar las líneas para alcanzar el rango lo más rápido posible.</li>
+      <li>🔹 Cada línea está diseñada para cumplir su función precisa. Crece hasta el nivel justo para calificar</li>
+      <li>🔹 Ideal para quienes desean progresar con foco y sin dispersión. Optimizada para avanzar de forma eficiente y clara.</li>
+    </ul><br>
+    <p><strong>🌟 Recomendado para:</strong></p>
+    <ul class="sin-puntos">
+      <li>🟢 Equipos nuevos o en formación.</li>
+      <li>🟢 Personas que buscan avanzar con claridad y equilibrio.</li>
+      <li>🟢 Mentores que desean enseñar una estructura base sólida.</li>
+    </ul>
+    <p style="margin-top: 0.5rem;"><em>“Lo justo es suficiente cuando está bien enfocado.”</em></p>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Estrategia 2 -->
+    <div class="panel" id="estrategia2">
+      <h2>Estrategia 2</h2>
+      <label for="rango-estrategia2">Rango:</label>
+      <select id="rango-estrategia2">
+        <option value="elite">Elite</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="platinum">Platinum</option>
+        <option value="diamond">Diamond</option>
+        <option value="blue">Blue Diamond</option>
+        <option value="presidential">Presidential Diamond</option>
+      </select>
+
+      <form class="form-inscripcion" data-panel="estrategia2">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="number" name="ov" placeholder="OV" required min="1" />
+        <button type="submit">Inscribir</button> <button onclick="resetPanel('estrategia2')">Resetear</button>
+      </form>
+
+      <div id="inscritos-estrategia2"></div>
+      <div id="progreso-estrategia2"></div>
+      <div id="recomendacion-estrategia2"></div>
+      <div id="estructura-estrategia2" class="estructura"></div>
+      <div class="info-estrategia">
+  <span class="tooltip-icon" onclick="toggleTooltip('tooltip-estrategia2')">🛈</span>
+  <div class="tooltip-box" id="tooltip-estrategia2">
+    <h3>🌱 Estrategia 2<br>Expansión con Potencial de Liderazgo</h3><br>
+    <p>
+      Esta estrategia propone una estructura con mayor volumen y ramificación, ideal para quienes desean expandirse rápidamente, capacitar líderes y alcanzar rangos altos con solidez.
+    </p><br>
+    <ul class="sin-puntos">
+      <li>🌟 Diseñada para impulsar el crecimiento exponencial, no solo cumplir con los mínimos.</li>
+      <li>🌟 Contempla líneas más profundas para nutrir liderazgos emergentes.</li>
+      <li>🌟 Ideal para quienes desean un negocio más estable y escalable a largo plazo.</li>
+    </ul><br>
+    <p><strong>🟣 Recomendado para:</strong></p>
+    <ul class="sin-puntos">
+      <li>🔵 Mentores activos con visión de equipo amplio.</li>
+      <li>🔵 Líderes que forman y sostienen nuevas generaciones.</li>
+      <li>🔵 Equipos listos para crecer con estructura y soporte.</li>
+    </ul>
+    <p style="margin-top: 0.5rem;"><em>“Crecer bien es más que crecer rápido.”</em></p>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Estrategia 3 -->
+    <div class="panel" id="estrategia3">
+      <h2>Estrategia 3</h2>
+      <label for="rango-estrategia3">Rango:</label>
+      <select id="rango-estrategia3">
+        <option value="elite">Elite</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="platinum">Platinum</option>
+        <option value="diamond">Diamond</option>
+        <option value="blue">Blue Diamond</option>
+        <option value="presidential">Presidential Diamond</option>
+      </select>
+
+      <form class="form-inscripcion" data-panel="estrategia3">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="number" name="ov" placeholder="OV" required min="1" />
+        <button type="submit">Inscribir</button> <button onclick="resetPanel('estrategia3')">Resetear</button>
+      </form>
+
+      <div id="inscritos-estrategia3"></div>
+      <div id="progreso-estrategia3"></div>
+      <div id="recomendacion-estrategia3"></div>
+      <div id="estructura-estrategia3" class="estructura"></div>
+      <div class="info-estrategia">
+  <span class="tooltip-icon" onclick="toggleTooltip('tooltip-estrategia3')">🛈</span>
+  <div class="tooltip-box" id="tooltip-estrategia3">
+    <h3>🌊 Estrategia 3<br>Línea Única y Profunda</h3><br>
+    <p>
+      Esta estrategia se enfoca en una sola línea de desarrollo, construida en profundidad. Cada nuevo líder se coloca bajo el anterior, creando una cadena continua de crecimiento.
+    </p><br>
+    <ul class="sin-puntos">
+      <li>🌟 Ideal para crear impulso, momentum y motivación colectiva.</li>
+      <li>🌟 Fomenta el liderazgo inmediato: cada persona debe activar al siguiente.</li>
+      <li>🌟 Promueve el trabajo colaborativo y la duplicación acelerada.</li>
+    </ul><br>
+    <p><strong>🟣 Recomendado para:</strong></p>
+    <ul class="sin-puntos">
+      <li>🔵 Líderes comprometidos que quieren formar un equipo sólido.</li>
+      <li>🔵 Equipos con fuerte acompañamiento y entrenamiento activo.</li>
+      <li>🔵 Grupos que desean velocidad y cohesión.</li>
+    </ul>
+    <p style="margin-top: 0.5rem;"><em>“Una línea profunda, un equipo unido, un destino compartido.”</em></p>
+  </div>
+      </div>
+    </div>
+
+    <!-- Estrategia 4 -->
+    <div class="panel" id="estrategia4">
+      <h2>Estrategia 4</h2>
+      <label for="rango-estrategia4">Rango:</label>
+      <select id="rango-estrategia4">
+        <option value="elite">Elite</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="platinum">Platinum</option>
+        <option value="diamond">Diamond</option>
+        <option value="blue">Blue Diamond</option>
+        <option value="presidential">Presidential Diamond</option>
+      </select>
+
+      <form class="form-inscripcion" data-panel="estrategia4">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="number" name="ov" placeholder="OV" required min="1" />
+        <button type="submit">Inscribir</button> <button onclick="resetPanel('estrategia4')">Resetear</button>
+      </form>
+
+      <div id="inscritos-estrategia4"></div>
+      <div id="progreso-estrategia4"></div>
+      <div id="recomendacion-estrategia4"></div>
+      <div id="estructura-estrategia4" class="estructura"></div>
+      <div class="info-estrategia">
+  <span class="tooltip-icon" onclick="toggleTooltip('tooltip-estrategia4')">🛈</span>
+  <div class="tooltip-box" id="tooltip-estrategia4">
+    <h3>🌐 Estrategia 4<br>Multiplicación con Efecto Red</h3><br>
+    <p>
+      Esta estrategia está diseñada para crear una red equilibrada, donde el crecimiento se distribuye entre varias líneas activas desde el inicio. Favorece la estabilidad y la generación de ingresos residuales desde niveles bajos.
+    </p><br>
+    <ul class="sin-puntos">
+      <li>🌟 Basada en la diversificación de esfuerzos desde el principio.</li>
+      <li>🌟 Permite mayor solidez en cada línea, reduciendo el riesgo de dependencia.</li>
+      <li>🌟 Cada líder desarrolla su propia subred con autonomía, fortaleciendo la base general.</li>
+    </ul><br>
+    <p><strong>🟣 Recomendado para:</strong></p>
+    <ul class="sin-puntos">
+      <li>🔵 Mentores que acompañan a múltiples líderes en paralelo.</li>
+      <li>🔵 Equipos con capacidad de sostener estructura amplia desde temprano.</li>
+      <li>🔵 Modelos que buscan equilibrio, previsibilidad y sostenibilidad.</li>
+    </ul>
+    <p style="margin-top: 0.5rem;"><em>“Una red viva es más fuerte que cualquier hilo aislado.”</em></p>
+  </div>
+</div>
+    </div>
+
+    <!-- Estrategia 5 -->
+    <div class="panel" id="estrategia5">
+      <h2>Estrategia 5</h2>
+      <label for="rango-estrategia5">Rango:</label>
+      <select id="rango-estrategia5">
+        <option value="elite">Elite</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="platinum">Platinum</option>
+        <option value="diamond">Diamond</option>
+        <option value="blue">Blue Diamond</option>
+        <option value="presidential">Presidential Diamond</option>
+      </select>
+
+      <form class="form-inscripcion" data-panel="estrategia5">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="number" name="ov" placeholder="OV" required min="1" />
+        <button type="submit">Inscribir</button> <button onclick="resetPanel('estrategia5')">Resetear</button>
+      </form>
+
+      <div id="inscritos-estrategia5"></div>
+      <div id="progreso-estrategia5"></div>
+      <div id="recomendacion-estrategia5"></div>
+      <div id="estructura-estrategia5" class="estructura"></div>
+      <div class="info-estrategia">
+  <span class="tooltip-icon" onclick="toggleTooltip('tooltip-estrategia5')">🛈</span>
+  <div class="tooltip-box" id="tooltip-estrategia5">
+    <h3>🪄 Estrategia 5<br>Profundidad con Núcleo Fuerte</h3><br>
+    <p>
+      Esta estrategia se enfoca en desarrollar una línea principal muy fuerte y bien nutrida, capaz de sostener los rangos altos con el mínimo necesario de líneas adicionales. Ideal para quien quiere ir profundo con enfoque estratégico y cercanía.
+    </p><br>
+    <ul class="sin-puntos">
+      <li>🌟 Prioriza la formación de un solo tronco sólido y profundo.</li>
+      <li>🌟 Apuesta por la calidad y compromiso de un núcleo compacto.</li>
+      <li>🌟 Minimiza el desgaste al reducir el número de líneas activas requeridas.</li>
+    </ul><br>
+    <p><strong>🟣 Recomendado para:</strong></p>
+    <ul class="sin-puntos">
+      <li>🔵 Líderes que prefieren foco intenso sobre amplitud.</li>
+      <li>🔵 Equipos muy comprometidos, con alta lealtad y constancia.</li>
+      <li>🔵 Mentores que trabajan en profundidad con dedicación personalizada.</li>
+    </ul>
+    <p style="margin-top: 0.5rem;"><em>“Un núcleo fuerte puede sostener todo un árbol.”</em></p>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Estrategia 6 -->
+    <div class="panel" id="estrategia6">
+      <h2>Estrategia 6</h2>
+      <label for="rango-estrategia6">Rango:</label>
+      <select id="rango-estrategia6">
+        <option value="elite">Elite</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="platinum">Platinum</option>
+        <option value="diamond">Diamond</option>
+        <option value="blue">Blue Diamond</option>
+        <option value="presidential">Presidential Diamond</option>
+      </select>
+
+      <form class="form-inscripcion" data-panel="estrategia6">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="number" name="ov" placeholder="OV" required min="1" />
+        <button type="submit">Inscribir</button> <button onclick="resetPanel('estrategia6')">Resetear</button>
+      </form>
+
+      <div id="inscritos-estrategia6"></div>
+      <div id="progreso-estrategia6"></div>
+      <div id="recomendacion-estrategia6"></div>
+      <div id="estructura-estrategia6" class="estructura"></div>
+      <div class="info-estrategia">
+  <span class="tooltip-icon" onclick="toggleTooltip('tooltip-estrategia6')">🛈</span>
+  <div class="tooltip-box" id="tooltip-estrategia6">
+    <h3>🧬 Estrategia 6<br>Multiplicación Inteligente</h3><br>
+    <p>
+      Esta estrategia está pensada para quienes desean crear duplicación constante sin perder enfoque ni estructura. Combina una base profunda y firme con líneas activas que se multiplican de forma consciente y sostenible.
+    </p><br>
+    <ul class="sin-puntos">
+      <li>🌟 Enfatiza la duplicación basada en hábitos, cultura y sistema.</li>
+      <li>🌟 Alterna entre expansión horizontal y profundidad según el ciclo del equipo.</li>
+      <li>🌟 Ideal para quienes lideran con visión organizacional y claridad de procesos.</li>
+    </ul><br>
+    <p><strong>🟣 Recomendado para:</strong></p>
+    <ul class="sin-puntos">
+      <li>🔵 Líderes que construyen con intención cada línea y generación.</li>
+      <li>🔵 Equipos que buscan replicabilidad y balance.</li>
+      <li>🔵 Mentores con mentalidad estratégica y enfoque educativo.</li>
+    </ul>
+    <p style="margin-top: 0.5rem;"><em>“Multiplicar sin perder el alma del equipo: ahí está el arte.”</em></p>
+  </div>
+</div>
+    </div>
+  </div>
+
+
+<script src="estructurasBase.js"></script>
+<script src="estrategiasBase.js"></script>
+  <script src="visual-pro.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('✔ Service Worker registrado'))
+      .catch((err) => console.error('⚠ Error al registrar Service Worker', err));
+  }
+</script>
+</body>
+</html>
