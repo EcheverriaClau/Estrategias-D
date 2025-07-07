@@ -1,35 +1,30 @@
 const CACHE_NAME = 'estrategias-ayla-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/visual.css',
-  '/estrategiasBase.js',
-  '/estructurasBase.js',
-  '/visual-pro.js',
-  '/icon-192.png',
-  '/icon-512.png',
-  '/manifest.json'
+  './',
+  './index.html',
+  './visual.css',
+  './estrategiasBase.js',
+  './estructurasBase.js',
+  './visual-pro.js',
+  './manifest.json',
+  './icon-192.png',
+  './icon-512.png'
 ];
 
-self.addEventListener('install', (e) => {
-  e.waitUntil(
-    caches.open('estrategias-cache').then((cache) => {
-      return cache.addAll([
-        'index.html',
-        'style.css',
-        'script.js',
-        'manifest.json',
-        'icon-192.png',
-        'icon-512.png'
-      ]);
+// Instala y guarda los archivos en caché
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) => {
+      return cache.addAll(urlsToCache);
     })
   );
 });
 
-self.addEventListener('fetch', (e) => {
-  e.respondWith(
-    caches.match(e.request).then((response) => {
-      return response || fetch(e.request);
+// Intercepta solicitudes y devuelve desde caché o desde la red
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
     })
   );
 });
